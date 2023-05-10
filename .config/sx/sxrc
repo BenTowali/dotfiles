@@ -1,0 +1,9 @@
+dunst &
+picom --no-fading-openclose &
+nm-applet &
+syncthing --no-browser &
+fcitx -d &
+nitrogen --restore &
+redshift -l 58.22:26.43 -t 6500:2600 &
+
+exec awesome

@@ -1,0 +1,9 @@
+configuration {
+	font: "JetBrains Mono Medium 13";
+	display-drun: "Applications";
+	drun-display-format: "{icon} {name}";
+	show-icons: true;
+	icon-theme: "Papirus";
+}
+
+@theme "/usr/share/rofi/themes/Monokai.rasi"
