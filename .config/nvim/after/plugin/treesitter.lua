@@ -1,11 +1,13 @@
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "bash", "lua", "html", "markdown", "rust", "svelte", "typescript", "query" },
+require("nvim-treesitter.configs").setup({
+	ensure_installed = { "bash", "lua", "html", "markdown", "svelte", "typescript", "query", "css", "git_rebase" },
 
-  sync_install = false,
-  auto_install = true,
+	sync_install = false,
+	auto_install = true,
+	indent = { enable = true },
+	autotag = { enable = true },
 
-  highlight = {
-    enable = true,
-    additional_vim_regex_highlighting = false,
-  },
-}
+	highlight = {
+		enable = true,
+		additional_vim_regex_highlighting = false,
+	},
+})
