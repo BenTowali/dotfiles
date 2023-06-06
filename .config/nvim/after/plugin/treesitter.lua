@@ -1,5 +1,16 @@
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "bash", "lua", "html", "markdown", "svelte", "typescript", "query", "css", "git_rebase" },
+	ensure_installed = {
+		"bash",
+		"rust",
+		"lua",
+		"html",
+		"markdown",
+		"svelte",
+		"typescript",
+		"query",
+		"css",
+		"git_rebase",
+	},
 
 	sync_install = false,
 	auto_install = true,

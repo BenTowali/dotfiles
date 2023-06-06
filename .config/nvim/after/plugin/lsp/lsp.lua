@@ -6,6 +6,7 @@ require("mason-lspconfig").setup({
 		"tailwindcss",
 		"tsserver",
 		"svelte",
+		"rust_analyzer",
 	},
 })
 require("mason-null-ls").setup({
@@ -48,3 +49,4 @@ require("lspconfig").bashls.setup({ capabilities = capabilities, on_attach = on_
 require("lspconfig").tailwindcss.setup({ capabilities = capabilities, on_attach = on_attach })
 require("lspconfig").tsserver.setup({ capabilities = capabilities, on_attach = on_attach })
 require("lspconfig").svelte.setup({ capabilities = capabilities, on_attach = on_attach })
+require("lspconfig").rust_analyzer.setup({ capabilities = capabilities, on_attach = on_attach })

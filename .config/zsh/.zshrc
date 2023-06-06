@@ -82,10 +82,10 @@ bindkey -s "^o" 'lfcd\n'
 # Aliases
 alias anime="ani-cli"
 alias solitaire="ttysolitaire --no-background-color"
-alias update-grub="grub-mkconfig -o /boot/grub/grub.cfg"
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias zconf="nvim ~/.config/zsh/.zshrc"
 alias zenv="nvim ~/.config/zsh/.zshenv"
-alias systemUpdate="sudo pacman -Syu --noconfirm && paru -Sua --noconfirm && sudo pacman -Qtdq | sudo pacman -Rns -"
+alias systemUpdate="sudo pacman -Syu --noconfirm && paru -Sua --noconfirm"
 alias vconf="nvim ~/.config/nvim/init.lua"
 alias nvimplugins="nvim ~/.config/nvim/lua/ben/plugins/"
 alias news="newsboat -q"
