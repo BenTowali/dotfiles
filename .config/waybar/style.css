@@ -1,0 +1,26 @@
+@import "./mocha.css";
+
+* {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+window#waybar {
+  background-color: @base;
+  color: @text;
+}
+
+#workspaces button.active {
+  background: @surface0;
+  color: @mauve;
+  border-bottom: 2px solid @mauve;
+}
+
+#clock {
+  font-weight: 700;
+}
+
+#language {
+  padding-left: 0.4em;
+  padding-right: 0.3em;
+}

@@ -1,0 +1,49 @@
+// -*- mode: jsonc -*-
+{
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "spacing": 4, // Gaps between modules (4px)
+  "modules-left": [
+		"hyprland/workspaces"
+  ],
+  "modules-center": [
+		"clock",
+  ],
+  "modules-right": [
+		"tray",
+		"hyprland/language"
+  ],
+	"hyprland/workspaces": {
+		"format": "{name}",
+		"on-click": "activate",
+		"sort-by-number": true,
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": []
+		}
+	},
+	"tray": {
+		"icon-size": 21,
+		"spacing": 5
+	},
+	"clock": {
+    "interval": 60,
+    "format": "{:%H:%M}",
+    "max-length": 25,
+		"tooltip-format": "<tt>{calendar}</tt>",
+		"calendar": {
+			"mode": "year",
+			"mode-mon-col": 3,
+			"on-scroll": 1,
+			"format": {
+				"months": "<span color='#cdd6f4'><b>{}</b></span>",
+				"days": "<span color='#cdd6f4'><b>{}</b></span>",
+				"weekdays": "<span color='#cba6f7'><b>{}</b></span>",
+				"today": "<span color='#f38ba8'><b><u>{}</u></b></span>",
+			},
+		}
+	},
+	"hyprland/language": {
+		"format": "{short}",
+	},
+}
