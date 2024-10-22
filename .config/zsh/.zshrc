@@ -32,9 +32,11 @@ export FZF_DEFAULT_OPTS=" \
 # Aliases
 ## Git
 alias gi="git init"
-alias ga="git add ."
+alias ga="git add --patch"
+alias gc="git commit"
 alias gci="git commit -m 'init: Initial commit'"
 alias gp="git push"
+alias gpo="git push -u origin main"
 ## Configs
 alias wconf="nvim ~/.config/waybar/config.jsonc"
 alias hconf="nvim ~/.config/hypr/"
@@ -86,7 +88,3 @@ compinit
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
-export PATH=$PATH:/home/ben/.millennium/ext/bin
-
-export PATH=$PATH:/home/ben/.spicetify
