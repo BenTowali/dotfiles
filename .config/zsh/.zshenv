@@ -3,6 +3,9 @@ export XDG_CONFIG_HOME=$HOME/.config/
 export XDG_STATE_HOME=$HOME/.local/state
 export XDG_CACHE_HOME=$HOME/.cache
 
+# For the script
+export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
+
 export WINEPREFIX="$XDG_DATA_HOME"/wine
 
 export GTK_IM_MODULE="fcitx"
