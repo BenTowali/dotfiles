@@ -1,0 +1,18 @@
+configuration {
+	modes: "drun,emoji";
+	show-icons: true;
+	icon-theme: "Papirus-Dark";
+	drun-display-format: "{icon}{name}";
+	display-drun: "Launch";
+	display-emoji: "Emoji";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@import "~/.config/rofi/theme.rasi"
