@@ -39,4 +39,5 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export TUIR_EDITOR=nvim
 export GOPATH="$XDG_DATA_HOME"/go
 export ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+export DVDCSS_CACHE="$XDG_DATA_HOME"/dvdcss
 export PATH="$HOME/.local/bin:$PATH":"$GOPATH/bin"
