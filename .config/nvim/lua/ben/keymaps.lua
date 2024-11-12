@@ -22,6 +22,10 @@ keymap("n", "<leader>tt", command.terminal)
 keymap("t", "<Esc>", [[<C-\><C-n>]], { noremap = true })
 
 --		Plugins
+-- Compile Mode
+keymap("n", "<leader>cc", command.Compile)
+keymap("n", "<leader>cr", command.Recompile)
+
 -- File Explorer
 keymap("n", "<leader>e", command.NvimTreeFindFileToggle)
 

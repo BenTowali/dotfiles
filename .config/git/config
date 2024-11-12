@@ -1,0 +1,7 @@
+[user]
+	name = Ben Towali
+	email = bentowalii@gmail.com
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true

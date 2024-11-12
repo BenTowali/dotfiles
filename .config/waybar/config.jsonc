@@ -6,7 +6,7 @@
 		"hyprland/workspaces"
   ],
   "modules-center": [
-		"clock",
+		"clock"
   ],
   "modules-right": [
 		"tray",
@@ -22,10 +22,6 @@
 			"3": []
 		}
 	},
-	"tray": {
-		"icon-size": 21,
-		"spacing": 5
-	},
 	"clock": {
     "interval": 60,
     "format": "{:%H:%M}",
@@ -39,11 +35,15 @@
 				"months": "<span color='#cdd6f4'><b>{}</b></span>",
 				"days": "<span color='#cdd6f4'><b>{}</b></span>",
 				"weekdays": "<span color='#cba6f7'><b>{}</b></span>",
-				"today": "<span color='#f38ba8'><b><u>{}</u></b></span>",
-			},
+				"today": "<span color='#f38ba8'><b><u>{}</u></b></span>"
+			}
 		}
 	},
-	"hyprland/language": {
-		"format": "{short}",
+	"tray": {
+		"icon-size": 21,
+		"spacing": 5
 	},
+	"hyprland/language": {
+		"format": "{short}"
+	}
 }

@@ -67,6 +67,9 @@ return {
 		},
 	},
 
+	-- Colorizer
+	{ "norcalli/nvim-colorizer.lua", opts = {} },
+
 	-- Icons
 	"nvim-tree/nvim-web-devicons",
 }
