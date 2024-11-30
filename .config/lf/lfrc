@@ -6,21 +6,21 @@ set scrolloff 8
 
 # Custom Functions
 cmd open ${{
-    case $(file --mime-type "$f" -bL) in
-        text/*|application/json) $EDITOR "$f";;
-        *) xdg-open "$f" ;;
-    esac
+  case $(file --mime-type "$f" -bL) in
+    text/*|application/json) $EDITOR "$f";;
+    *) xdg-open "$f" ;;
+  esac
 }}
 
 cmd unarchive ${{
   case "$f" in
-      *.zip) unzip "$f" ;;
-      *.tar.gz) tar -xzvf "$f" ;;
-      *.tar.bz2) tar -xjvf "$f" ;;
-      *.tar) tar -xvf "$f" ;;
-			*.7z) 7z x "$f" ;;
-			*.rar) unrar "$f" ;;
-      *) echo "Unsupported format" ;;
+    *.zip) unzip "$f" ;;
+    *.tar.gz) tar -xzvf "$f" ;;
+    *.tar.bz2) tar -xjvf "$f" ;;
+    *.tar) tar -xvf "$f" ;;
+		*.7z) 7z x "$f" ;;
+		*.rar) unrar "$f" ;;
+    *) echo "Unsupported format" ;;
   esac
 }}
 
@@ -63,7 +63,6 @@ map md push :mkdir<space>
 map mf push :mkfile<space>
 ## cd
 map gh cd ~/
-map gy cd ~/.config/hypr/
 map gd cd /run/media/ben/
-map ge cd ~/.local/share/games/
-map gr cd ~/Documents/coding/
+map gr cd ~/Programmation
+map ge cd ~/.local/share/

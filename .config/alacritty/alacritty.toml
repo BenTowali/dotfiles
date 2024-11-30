@@ -21,7 +21,7 @@ bold_italic.family = "JetBrainsMono Nerd Font"
 bold_italic.style = "Bold Italic"
 
 [cursor]
-style = { shape = "Beam"}
+style = { shape = "Beam" }
 
 [terminal.shell]
 program = "/bin/zsh"

@@ -31,4 +31,4 @@ keymap("n", "<leader>e", command.NvimTreeFindFileToggle)
 
 -- Telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
-keymap("n", "<leader>fs", "<cmd>Telescope grep_string<cr>")
+keymap("n", "<leader>fe", "<cmd>Telescope live_grep<cr>")

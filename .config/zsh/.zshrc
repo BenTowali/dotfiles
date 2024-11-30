@@ -32,11 +32,12 @@ export FZF_DEFAULT_OPTS=" \
 # Aliases
 ## Git
 alias gi="git init"
-alias ga="git add --patch"
 alias gc="git commit"
 alias gci="git commit -m 'init: Initial commit'"
 alias gp="git push"
 alias gpo="git push -u origin main"
+alias gl="git log --oneline"
+alias lg="lazygit"
 ## Configs
 alias wconf="nvim ~/.config/waybar/config.jsonc"
 alias hconf="nvim ~/.config/hypr/"
@@ -46,12 +47,8 @@ alias vconf="nvim ~/.config/nvim/"
 ## Other
 alias anime="ani-cli"
 alias solitaire="ttysolitaire --no-background-color"
-alias news="newsboat -q"
-alias reddit="tuir"
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
-alias lg="lazygit"
 alias ff="fastfetch"
-alias startwin="sudo virsh start win10"
 
 # Keybindings
 bindkey -e
