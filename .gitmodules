@@ -1,0 +1,3 @@
+[submodule ".config/spicetify/Themes"]
+	path = .config/spicetify/Themes
+	url = git@github.com:BenTowali/spicetify-catppuccin.git
