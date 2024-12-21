@@ -1,9 +1,6 @@
 return {
 	-- Catppuccin theme
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000,
 		config = function()
 			vim.cmd("colorscheme catppuccin")
 		end,
@@ -39,23 +36,19 @@ return {
 	},
 
 	-- Show indentation
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		opts = { indent = { char = "┊" } },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {
+			indent = { char = "┊" }
+		},
 	},
 
 	-- Statusline
-	{
-		"nvim-lualine/lualine.nvim",
-		opts = { options = { theme = "catppuccin" } },
+	{ "nvim-lualine/lualine.nvim", opts = {
+			options = { theme = "catppuccin" }
+		},
 	},
 
 	-- Bufferline
-	{
-		"akinsho/bufferline.nvim",
-		after = "catppuccin",
-		version = "*",
+	{ "akinsho/bufferline.nvim", after = "catppuccin", version = "*",
 		opts = {
 			options = {
 				indicator = {
@@ -67,8 +60,11 @@ return {
 		},
 	},
 
-	-- Colorizer
-	{ "norcalli/nvim-colorizer.lua", opts = {} },
+	-- Pretty dialogs
+	{ "stevearc/dressing.nvim", opts = {
+			input = { title_pos = "center", }
+		}
+	},
 
 	-- Gitsigns
 	{ "lewis6991/gitsigns.nvim", opts = {} },

@@ -1,0 +1,26 @@
+#!/bin/sh
+
+get_volume() {
+	pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '\d+(?=%)' | head -n 1
+}
+
+raise_volume() {
+	pactl set-sink-volume @DEFAULT_SINK@ +2%
+}
+
+lower_volume() {
+	pactl set-sink-volume @DEFAULT_SINK@ -2%
+}
+
+case $1 in
+	up)
+		raise_volume
+		;;
+	down)
+		lower_volume
+		;;
+esac
+
+volume=`get_volume`
+
+dunstify -u low --icon="$HOME/.config/dunst/volume.png" "Volume: $volume%" -h string:x-dunst-stack-tag:dunstvolume -h int:value:"$volume"
